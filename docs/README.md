@@ -1,10 +1,66 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# geometric_lib
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+Простая библиотека на Python. Считает площадь и периметр круга, квадрата, прямоугольника и треугольника.
+Для каждой фигуры свой файл, и в каждом есть функции `area` и `perimeter`.
+
+## Функции
+
+### Круг (circle.py)
+
+- `area(r)` - площадь круга по радиусу
+- `perimeter(r)` - длина окружности по радиусу
+
+```python
+import circle
+
+print(circle.area(1))       # 3.141592653589793
+print(circle.perimeter(1))  # 6.283185307179586
+```
+
+### Квадрат (square.py)
+
+- `area(a)` - площадь квадрата по стороне
+- `perimeter(a)` - периметр квадрата по стороне
+
+```python
+import square
+
+print(square.area(5))       # 25
+print(square.perimeter(5))  # 20
+```
+
+### Прямоугольник (rectangle.py)
+
+- `area(a, b)` - площадь прямоугольника по двум сторонам
+- `perimeter(a, b)` - периметр прямоугольника по двум сторонам
+
+```python
+import rectangle
+
+print(rectangle.area(3, 4))       # 12
+print(rectangle.perimeter(3, 4))  # 14
+```
+
+### Треугольник (triangle.py)
+
+- `area(a, h)` - площадь треугольника по основанию и высоте
+- `perimeter(a, b, c)` - периметр треугольника по трём сторонам
+
+```python
+import triangle
+
+print(triangle.area(3, 4))          # 6.0
+print(triangle.perimeter(3, 4, 5))  # 12
+```
+
+## История изменений
+
+- `8ba9aeb` - добавлены круг и квадрат
+- `d078c8d` - добавлена документация
+- `86b9a2d` - добавил прямоугольник
+- `4e7c582` - исправил периметр прямоугольника
+- `5e2f0df` - добавил docstring'и к функциям
+- `8a43d83` - поправил формулы в описании функций круга
+- `b1fdab1` - поправил формулы в описании функций квадрата
+- `8619a9a` - поправил формулы в описании функций прямоугольника
+- `aa28008` - добавил треугольник с описанием функций
